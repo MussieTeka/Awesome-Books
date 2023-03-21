@@ -3,6 +3,25 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.27.5"
-  }
+    "eslint-plugin-import": "^2.27.5",
+    "hint": "^7.1.5"
+  },
+  "name": "awesome-books",
+  "description": "- [📗 Table of Contents](#-table-of-contents)   - [🛠️ Built With ](#-built-with-)     - [Tech Stack ](#tech-stack-)     - [Key Features](#key-features)    - [🚀 Live Demo ](#-live-demo-)    - [💻 Getting Started ](#-getting-started-)    - [Setup](#setup)    - [Prerequisites](#prerequisites)     - [Install](#install)     - [Usage](#usage)     - [Run tests](#run-tests)     - [Deployment](#triangular_flag_on_post-deployment)   - [👥 Author ](#-author-)   - [🔭 Future Features ](#-future-features-)   - [🤝 Contributing ](#-contributing-)   - [⭐️ Show your support](#support)   - [🙏 Acknowledgments ](#-acknowledgments-)   - [❓ FAQ (OPTIONAL)](#faq)   - [📝 License ](#-license-)",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MussieTeka/Awesome-Books.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MussieTeka/Awesome-Books/issues"
+  },
+  "homepage": "https://github.com/MussieTeka/Awesome-Books#readme"
 }
