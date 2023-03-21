@@ -32,6 +32,11 @@ function createBookElement(title, author) {
   return book;
 }
 
+// Function to save the book list to localStorage
+function saveToLocalStorage(bookListHtml) {
+  localStorage.setItem('bookList', bookListHtml);
+}
+
 // Function to add a new book to the list
 function addBook() {
   const title = titleInput.value.trim();
@@ -68,10 +73,6 @@ function removeBook(event) {
   saveToLocalStorage(bookList.innerHTML);
 }
 
-// Function to save the book list to localStorage
-function saveToLocalStorage(bookListHtml) {
-  localStorage.setItem('bookList', bookListHtml);
-}
 
 // Function to retrieve the book list from localStorage
 function getFromLocalStorage() {
