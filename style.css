@@ -1,0 +1,12 @@
+.add-book {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.title-input,
+.author-input,
+.add-btn {
+  width: 100px;
+  margin-bottom: 10px;
+}
