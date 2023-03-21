@@ -73,7 +73,6 @@ function removeBook(event) {
   saveToLocalStorage(bookList.innerHTML);
 }
 
-
 // Function to retrieve the book list from localStorage
 function getFromLocalStorage() {
   const bookListHtml = localStorage.getItem('bookList');
