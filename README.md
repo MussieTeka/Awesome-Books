@@ -109,7 +109,6 @@ Get a hosting website and give all of the github files
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Use classes instead of arrays
 > Adding contact us section
 >Add css for styling
 
