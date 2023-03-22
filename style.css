@@ -1,4 +1,4 @@
-.add-book {
+/* .add-book {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -9,4 +9,43 @@
 .add-btn {
   width: 100px;
   margin-bottom: 10px;
+} */
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-list {
+  border: 1px solid black;
+}
+
+.book {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ddd 50%, #fff 50%);
+  padding: 10px;
+}
+
+.add-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn {
+  margin-left: 65%;
+}
+
+.remove-btn {
+  margin-left: 100px;
+}
+
+.book-author {
+  margin-left: 10px;
 }
