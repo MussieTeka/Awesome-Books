@@ -1,3 +1,6 @@
+/* eslint-disable class-methods-use-this */
+/* eslint-disable no-unused-vars */
+
 class BookList {
   constructor() {
     this.titleInput = document.querySelector('.title-input');
