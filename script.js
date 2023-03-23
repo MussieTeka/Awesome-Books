@@ -1,6 +1,5 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-unused-vars */
-
 class BookList {
   constructor() {
     this.titleInput = document.querySelector('.title-input');
@@ -29,6 +28,13 @@ class BookList {
     this.bookList.appendChild(book);
     this.bookList.style.display = 'flex';
     this.bookList.style.flexDirection = 'column';
+
+    const index = this.bookList.children.length;
+    if (index % 2 === 0) {
+      book.style.backgroundColor = '#fff';
+    } else {
+      book.style.backgroundColor = '#ddd';
+    }
 
     // Save to localStorage
     this.saveToLocalStorage(this.bookList.innerHTML);
@@ -83,8 +89,8 @@ class BookList {
   }
 
   // Function to save the book list to localStorage
-  saveToLocalStorage(bookListHtml) {
-    localStorage.setItem('bookList', bookListHtml);
+  saveToLocalStorage() {
+    localStorage.setItem('bookList', this.bookList.innerHTML);
   }
 
   // Function to retrieve the book list from localStorage
@@ -97,3 +103,54 @@ class BookList {
 }
 
 const myBookList = new BookList();
+
+// Define the DOM elements
+const elements = {
+  newBook: document.querySelector('#list'),
+  bookList: document.querySelector('#books-list'),
+  introduceBook: document.querySelector('#introduce-book'),
+  addBookSection: document.querySelector('#add-book-form'),
+  contactUsBtn: document.querySelector('#contact-us'),
+  contactUs: document.querySelector('#contact-info'),
+};
+
+// Define the functions to handle the events
+function showBooksList() {
+  elements.bookList.style.display = 'flex';
+  elements.bookList.style.marginTop = '100px';
+  elements.bookList.style.marginBottom = '100px';
+  elements.addBookSection.style.display = 'none';
+  elements.contactUs.style.display = 'none';
+}
+
+function showAddBookForm() {
+  elements.bookList.style.display = 'none';
+  elements.addBookSection.style.display = 'flex';
+  elements.addBookSection.style.marginTop = '100px';
+  elements.addBookSection.style.marginBottom = '100px';
+  elements.contactUs.style.display = 'none';
+}
+
+function showContactUs() {
+  elements.bookList.style.display = 'none';
+  elements.addBookSection.style.display = 'none';
+  elements.contactUs.style.display = 'flex';
+  elements.contactUs.style.marginTop = '100px';
+  elements.contactUs.style.marginBottom = '100px';
+}
+
+// Add the event listeners to the elements
+elements.newBook.addEventListener('click', showBooksList);
+elements.introduceBook.addEventListener('click', showAddBookForm);
+elements.contactUsBtn.addEventListener('click', showContactUs);
+
+function updateTime() {
+  const now = new Date();
+  const date = now.toLocaleDateString();
+  const time = now.toLocaleTimeString();
+  const dateTime = `${date} ${time}`;
+  document.getElementById('current-time').querySelector('p').textContent = dateTime;
+}
+
+updateTime();
+setInterval(updateTime, 1000);

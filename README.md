@@ -109,8 +109,7 @@ Get a hosting website and give all of the github files
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Adding contact us section
->Add css for styling
+> Add animations and transformations to make the site more interactive.
 
 
 <!-- CONTRIBUTING -->

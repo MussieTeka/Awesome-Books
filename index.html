@@ -8,19 +8,55 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="book-container">
-      <h1 class="title">Awesome Books</h1>
-      <p class="description">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, pariatur!
-      </p>
-      <div class="book-list"></div>
-      <div class="add-book">
-        <h2>Add New Books</h2>
-        <input type="text" class="title-input" placeholder="Title" />
-        <input type="text" class="author-input" placeholder="Author" />
-        <button class="add-btn">Add</button>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <h1>Awesome Books</h1>
+        </a>
       </div>
+
+      <nav class="navbar">
+        <ul>
+          <li id="list"><a href="#books-list">Books List</a></li>
+          <li id="introduce-book"><a href="#add-book-form">Add Book</a></li>
+          <li id="contact-us"><a href="#contact-info">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="current-time" class="navbar">
+      <p></p>
     </div>
+
+    <div class="content-container">
+      <section id="books-list" class="section">
+        <h2>All Awesome Books</h2>
+        <div class="book-list"></div>
+      </section>
+
+      <section id="add-book-form" class="section">
+        <h2>Add a New Book</h2>
+        <div class="add-book">
+          <input type="text" class="title-input" placeholder="Title" />
+          <input type="text" class="author-input" placeholder="Author" />
+          <button class="add-btn">Add</button>
+        </div>
+      </section>
+
+      <section id="contact-info" class="section">
+        <h2>Contact Information</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          doloribus nam atque ea. Exercitationem, aperiam.
+        </p>
+        <p>Address: 123 Main St.</p>
+        <p>Phone: 555-1234</p>
+        <p>Email: info@awesomebooks.com</p>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2023 Awesome Books</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
